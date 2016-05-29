@@ -1,28 +1,29 @@
 # qtKabuChart
 Chart program for japanese stocks only
 ## Description
-This source code is Test alpha version of Qt widget application created by open-source Qt5.5.0.  
+This source code is test alpha version of Qt widget application created by open-source(LGPL) Qt5.5.0.  
 Using this program, you can display candlestick chart of japanese stocks.  
 
-マックとUnix環境下で個人的に株チャートを表示する、評価版プログラムです。  
-open-source版のQt5.5で作成したc++プログラムソースです。  
-OsX(El Capitan)とUbuntu14.04環境下でデバッグしています。  
-テストαバージョンで、重大なバグが隠れている可能性があります。  
-日本株限定で、株価データを[http://k-db.com](http://k-db.com)から取得してチャート表示をします。  
+株チャートを表示するための評価版プログラムです。  
+マックとUbuntuで個人的利用するために、LGPL版のQt5.5.0で作成したc++プログラムソースです。    
 
 ## Caution and Limitation
 I am a beginner for qt and c++.  
 There is a possibility of serious trouble occurs.  
 This program is for japanese stocks only.
 
+重大なバグが存在する可能性は否定できません。  
+日本株限定で、株価データを[http://k-db.com](http://k-db.com)から取得してチャート表示をします。  
 データ取得元k-db.comのアクセス制限によりデータ取得ができない場合があります。
+OsX(El Capitan)とUbuntu14.04環境下でデバッグしています。  
+Windows環境下では充分に確認していません。
 
 ## Demo
 ![](https://github.com/narih/qtKabuChart/wiki/images/sosei.png)  
 
 ## Requirement
 - [Open source Qt5.x](https://www.qt.io/download-open-source/  "ダウンロードページ") 
-- [Ta-Lib](http://ta-lib.org/) open-source for c/c++  
+- [Ta-Lib](http://ta-lib.org/) open-source(BSD license) for c/c++  
 Even if Ta-Lib library is not installed, I think error will not be occur.  
 But, technical indicators not visible like MA.  
 Ta-Libがない場合でもエラーは出ないはずですが、大部分のテクニカル指標が表示できません。  
@@ -82,4 +83,4 @@ Macのアクティビティモニタでプロセスのメモリ推移を監視�
 see usage.html  
 
 ## License
-MIT see LICENCE
+MIT see LICENSE
