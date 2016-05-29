@@ -78,5 +78,8 @@ Macのアクティビティモニタでプロセスのメモリ推移を監視�
 現在は、QGraphicsViewでQGraphicsSceneにQGraphicsItemをchildとして追加し、銘柄変更時にこれらをクリアする仕様にしています。  
 これで、以前のようにチャート表示ができなくなることはなくなったかもしれません。  
 
+## Reference
+see usage.html  
+
 ## License
 MIT see LICENCE
