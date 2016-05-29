@@ -1343,7 +1343,9 @@ void MainWindow::downloadKdb(int type, int max){
         //return;
         status->showMessage("background start", 1000);
         backgroundThread *back = new backgroundThread;
-        if(max > 0)
+        if(type == 0)
+            max = 0;
+        //if(max > 0)
             back->setMaxdownload(max);
         back->set(&td, tbDatadir->text(), td.isCredit());
         connect(back, &backgroundThread::finishThread, this, &MainWindow::backgroundFinished); // Qt::AutoConnection
