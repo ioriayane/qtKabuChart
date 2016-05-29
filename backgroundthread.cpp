@@ -23,7 +23,7 @@ void backgroundThread::run(){
     int offset = idate - last;
     //qDebug() << "last:" << last << "target:" << idate << "offset:" << offset;
 
-    if(offset <= 1){
+    if(maxDownload < 1 || offset <= 1){
         downloadDay(td, isUpdate, dataDir, isOmega);
         //最終日の翌日の場合（16時以降に限定）
         QSqlQuery query = QSqlQuery(td->db);
